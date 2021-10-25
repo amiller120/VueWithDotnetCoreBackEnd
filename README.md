@@ -1,6 +1,7 @@
 # VueWithDotnetCoreBackEnd
 
 This Project is using NPGSQL/Postgres for the DB connection
+
 Create a new database with Postgres and use the below code to create the table
 
 Create Table Customers(
