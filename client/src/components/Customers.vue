@@ -1,11 +1,17 @@
 <template>
   <div>
-    <div v-for="customer in customers">
-      <p>{{ customer.id }}</p>
-      <p>{{ customer.firstName }}</p>
-      <p>{{ customer.lastName }}</p>
-      <p>{{ customer.email}}</p>
-    </div>
+    <b-container>
+      <div v-for="customer in customers">
+        <div>
+          <b-card>
+            <b-card-title>{{ customer.firstName }} {{customer.lastName}}</b-card-title>
+            <b-card-text>
+              Email: {{ customer.email }}
+            </b-card-text>
+          </b-card>
+        </div>
+      </div>
+    </b-container>
   </div>
 </template>
 

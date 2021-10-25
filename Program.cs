@@ -9,6 +9,8 @@ string connectionString = builder.Configuration.GetConnectionString("DataContext
 
 builder.Services.AddTransient<IDbConnection>((sp) => new NpgsqlConnection(connectionString));
 
+// TODO add logic to create database and table if they don't exist
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy(name: "CorsPolicy",
